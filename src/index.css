@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100..900&display=swap");
+@import "toastr";
+
+/*
+font-family: 'M PLUS Rounded 1c', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    transition: all 0.3s ease;
+  }
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background-color: transparent;
+    transition: all 0.3s ease;
+  }
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(203, 213, 225, 0.7);
+    border-radius: 100vh;
+    transition: all 0.3s ease;
+  }
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(203, 213, 225, 1);
+  }
+
+  .scrollbar-0::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  .scrollbar-1::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .scrollbar-1::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .scrollbar-1::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+:root {
+  --swiper-theme-color: #17b193;
+  --swiper-pagination-bullet-width: 12px;
+  --swiper-pagination-bullet-height: 12px;
+  --swiper-pagination-bullet-horizontal-gap: 2px;
+  --swiper-pagination-bottom: 0;
+  --swiper-pagination-bullet-inactive-color: #cbd5e1;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+}
+
+*,
+*:focus {
+  outline: none;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Archivo", sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+swiper-container.details-image {
+  --swiper-navigation-size: 24px;
+  --swiper-navigation-sides-offset: 0px;
+  --swiper-pagination-bottom: 4px;
+}
+
+.quillcss .ql-container.ql-snow{
+  height: 163px;
+  margin: 0 0 33px;
+}
+.quillcss .quill{
+  margin: 60px 0 0;
+}
